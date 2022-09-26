@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="owl.carousel.min.css" />
+    <link rel="stylesheet" href="owl.theme.default.min.css" />
+    <link rel="stylesheet" href="./lightbox.min.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./servicebox-3.css" />
+    <title>d-3</title>
+  <style>
+     .animation-video {
+    width: 100%;
+}
+ video {
+    display: block;
+    width: 100%;
+    object-fit: contain;
+    max-height: 1200px;
+}
+
+ .heading {
+    max-width: 80rem;
+    margin: 0 auto;
+    z-index: 1;
+  display: none;
+}
+
+ .section_container {
+    position: absolute;
+}
+.section_container {
+    width: 100%;
+    max-width: 1600px;
+    padding-left: var(--space-9);
+    padding-right: var(--space-9);
+    margin: 0 auto;
+}
+
+#hero {
+  
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  
+    
+}
+ #hero.end::before {
+    opacity: 1;
+   
+}
+
+ #hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(at 29% 41%, #b0a9ef 0px, transparent 50%),radial-gradient(at 84% 2%, #d1f5e8 0px, transparent 50%),radial-gradient(at 44% 95%, #b3baff 0px, transparent 50%),radial-gradient(at 100% 92%, #99adff 0px, transparent 50%),radial-gradient(at 0% 100%, #dbdbdb 0px, transparent 50%),radial-gradient(at 60% 24%, #b8ffd4 0px, transparent 50%);
+    opacity: 0;
+    transition: 1s ease opacity;
+    background-size: 220%;
+    background-position: center;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+  </style>
+  </head>
+  <body>
+    <!-- Start the  Navbar -->
+    <header class="navbar-margin">
+      <nav class="navbar fixed-top navbar-expand-lg bg-white p-4">
+        <div class="container">
+          <a class="navbar-brand" href="index.html">
+            <img width="100px" src="./img/lockteclogo.webp" alt="" />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a
+                  class="nav-link text-muted fw-bold nav-f text-uppercase"
+                  aria-current="page"
+                  href="index.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle text-muted fw-bold nav-f text-uppercase"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Anwendung
+                </a>
+                <ul class="dropdown-menu p-2" aria-labelledby="navbarDropdown">
+                  <li>
+                    <a
+                      class="dropdown-item text-muted text-uppercase fw-bold nav-f mb-2 text-uppercase"
+                      href="#"
+                      >Verkehrsbetriebe</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item text-muted text-uppercase fw-bold nav-f mb-2 text-uppercase"
+                      href="#"
+                      >Medizin</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item text-muted text-uppercase fw-bold nav-f mb-2 text-uppercase"
+                      href="#"
+                      >Einzelhandel</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item text-muted text-uppercase fw-bold nav-f mb-2 text-uppercase"
+                      href="#"
+                      >Öffentlicher Sektor/Verwaltung</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item text-muted text-uppercase fw-bold nav-f mb-2 text-uppercase"
+                      href="#"
+                      >Immobilien Und Wohnen</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item text-muted text-uppercase fw-bold nav-f mb-2 text-uppercase"
+                      href="#"
+                      >Smart Cities Und Smart Terminals</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item text-muted text-uppercase fw-bold nav-f mb-2 text-uppercase"
+                      href="#"
+                      >Tourismus Und Freizeit</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item text-muted text-uppercase fw-bold nav-f mb-2 text-uppercase"
+                      href="#"
+                      >SICHERHEIT UND MILITÄR</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item text-muted text-uppercase fw-bold nav-f mb-2 text-uppercase"
+                      href="#"
+                      >INDUSTRIE UND BAU</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item text-muted text-uppercase fw-bold nav-f mb-2 text-uppercase"
+                      href="#"
+                      >AUSSTELLUNGEN/VERANSTALTUNGEN</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link text-muted fw-bold nav-f text-uppercase"
+                  href="./drag.html"
+                  >Konfigurator</a
+                >
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle text-muted fw-bold nav-f text-uppercase"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Produkte
+                </a>
+                <ul class="dropdown-menu p-2" aria-labelledby="navbarDropdown">
+                  <li>
+                    <a
+                      class="dropdown-item text-muted fw-bold nav-f mb-2 text-uppercase"
+                      href="#"
+                      >Cool Lockers</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item text-muted fw-bold nav-f mb-2 text-uppercase"
+                      href="#"
+                      >Locksafe</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item text-muted fw-bold nav-f mb-2 text-uppercase"
+                      href="#"
+                      >ServiceBox</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item text-muted fw-bold nav-f mb-2 text-uppercase"
+                      href="#"
+                      >Smartterminal</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item text-muted fw-bold nav-f mb-2 text-uppercase"
+                      href="#"
+                      >Velosafe</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item text-muted fw-bold nav-f mb-2 text-uppercase"
+                      href="#"
+                      >ServiceBox Basic</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item text-muted fw-bold nav-f mb-2 text-uppercase"
+                      href="#"
+                      >Locksafe Mechanic</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item text-muted fw-bold nav-f mb-2 text-uppercase"
+                      href="#"
+                      >Servicepoint</a
+                    >
+                  </li>
+                </ul>
+              </li>
+
+              <li class="nav-item">
+                <a
+                  class="nav-link text-muted fw-bold nav-f text-uppercase"
+                  href="software.html"
+                  >Software</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link text-muted fw-bold nav-f text-uppercase"
+                  href="about.html"
+                  >Über uns</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link text-muted fw-bold nav-f text-uppercase"
+                  href="contact.html"
+                  >Kontakt</a
+                >
+              </li>
+            </ul>
+
+            <div class="dropdown">
+              <i class="bi bi-translate"></i>
+              <a
+                class="btn btn-light dropdown-toggle text-uppercase"
+                href="#"
+                role="button"
+                id="dropdownMenuLink"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                DE
+              </a>
+
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                <li><a class="dropdown-item text-uppercase" href="">En</a></li>
+                <li></li>
+              </ul>
+            </div>
+
+            <li
+              class="nav-link ms-4 pe-auto"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal"
+            >
+              <a href="#" class="nav-link"> <i class="bi bi-search"></i></a>
+            </li>
+          </div>
+        </div>
+      </nav>
+      <div
+        class="d-flex flex-column flex-shrink-0 bg-dark ms-auto fix fixed-top sidebar"
+        style="width: 14.5rem"
+      >
+        <ul class="nav nav-pills nav-flush flex-column mb-auto text-center">
+          <li class="nav-item">
+            <a
+              href="#"
+              class="nav-link border-bottom text-white"
+              aria-current="page"
+              title=""
+              data-bs-toggle="tooltip"
+              data-bs-placement="right"
+              data-bs-original-title="Home"
+            >
+              <div class="row">
+                <div class="col-md-4 lock-icon">
+                  <i class="bi bi-envelope-fill fa-2x"></i>
+                </div>
+                <div
+                  class="col-md-6 text-center align-content-center justify-content-center mt-2"
+                >
+                  <h4 class="">Email</h4>
+                </div>
+              </div>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a
+              href="#"
+              class="nav-link border-bottom text-white"
+              aria-current="page"
+              title=""
+              data-bs-toggle="tooltip"
+              data-bs-placement="right"
+              data-bs-original-title="Home"
+            >
+              <div class="row">
+                <div class="col-md-4 lock-icon">
+                  <i class="bi bi-telephone-fill fa-2x"></i>
+                </div>
+                <div
+                  class="col-md-6 text-center align-content-center justify-content-center mt-2"
+                >
+                  <h4 class="">Call us</h4>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a
+              href="#"
+              class="nav-link border-bottom text-white"
+              aria-current="page"
+              title=""
+              data-bs-toggle="tooltip"
+              data-bs-placement="right"
+              data-bs-original-title="Home"
+            >
+              <div class="row lock-icon">
+                <div class="col-md-4">
+                  <i class="bi bi-megaphone-fill fa-2x"></i>
+                </div>
+                <div
+                  class="col-md-6 text-center align-content-center justify-content-center mt-2"
+                >
+                  <h4 class="">Actions</h4>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a
+              href="#"
+              class="nav-link border-bottom text-white"
+              aria-current="page"
+              title=""
+              data-bs-toggle="tooltip"
+              data-bs-placement="right"
+              data-bs-original-title="Home"
+            >
+              <div class="row lock-icon">
+                <div class="col-md-4">
+                  <i class="bi bi-newspaper fa-2x"></i>
+                </div>
+                <div
+                  class="col-md-6 text-center align-content-center justify-content-center mt-2"
+                >
+                  <h4 class="">News</h4>
+                </div>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <!-- showcase -->
+    <section id="hero" data-navposition="relative" class=" text-white">
+      <div class="section_container heading">
+        <div class="padding_0 padding_sm_9 txt_center">
+          <h3>
+            <span
+              class="txt_label white txt_caption txt_uppercase margin_bottom_5"
+              data-tr="jqfs"
+              >Locker</span
+            >
+          </h3>
+          <h1
+            class="display-1 fw-bold txt_caption txt_medium txt_uppercase txt_neutral_grayscale_100 margin_bottom_7"
+          >
+            <span
+              >Click & Collect Servicebox <br>
+              </span
+              >
+             
+            </h1>
+            <h2> <span class="txt_book" data-tr="gkwxyo"
+              >
+              Qualität made in Germany.</span
+            ></h2>
+            <h2
+            class="txt_headline txt_medium txt_neutral_grayscale_100 margin_bottom_9"
+            data-tr="bospma"
+          >
+          Abholstation – Anlieferung und Abholung 24/7
+          </h2>
+          <aside class="w-75 mx-auto mt-4">
+            <h3
+              class="txt_body txt_neutral_grayscale_100 margin_bottom_9"
+              data-tr="aoumjgcome "
+            >
+             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, minima.<br>
+             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet, repudiandae.
+            </h3>
+          </aside>
+          <a
+            href="#subscribe"
+            class="btn_secondary_neutral btn btn-outline-light py-3 px-5 mt-4 fw-bold fs-3"
+            data-event-action="click-hero-kmi"
+            data-event-label="Body Comp"
+            data-scroll-target="#subscribe"
+            data-tr="nwxpfdihck"
+            >Order Now</a
+          >
+        </div>
+      </div>
+      
+      <div class="animation-video">
+        <video muted autoplay   class="video" preload="metadata"   >
+          <source src="./products/main.mp4" type="video/mp4" />
+        </video>
+      </div>
+    </section>
+    <!-- showcase application -->
+
+    <!-- end showcase -->
+
+    <!-- footer -->
+    <section id="footer" class="bg-secondary-main">
+      <div class="container">
+        <footer class="py-5">
+          <div class="row">
+            <div class="col-6 col-md-2 mb-3">
+              <h5>Navigation</h5>
+              <ul class="nav flex-column">
+                <li>
+                  <a href="#" class="nav-link p-0 text-muted mb-2 p-0">Home</a>
+                </li>
+                <li>
+                  <a href="#" class="nav-link p-0 text-muted mb-2 p-0"
+                    >Anwendung</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="nav-link p-0 text-muted mb-2 p-0"
+                    >Konfigurator</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="nav-link p-0 text-muted mb-2 p-0"
+                    >Software</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="nav-link p-0 text-muted mb-2 p-0"
+                    >Über uns</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="nav-link p-0 text-muted mb-2 p-0"
+                    >Kontakt</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="nav-link p-0 text-muted mb-2 p-0">News</a>
+                </li>
+                <li>
+                  <a href="#" class="nav-link p-0 text-muted mb-2 p-0"
+                    >Actions</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="nav-link p-0 text-muted mb-2 p-0"
+                    >Service</a
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <div class="col-6 col-md-2 mb-3">
+              <h5>Produkte</h5>
+              <ul class="nav flex-column">
+                <li>
+                  <a class="nav-link p-0 text-muted mb-2 p-0" href="#"
+                    >Cool Lockers</a
+                  >
+                </li>
+                <li>
+                  <a class="nav-link p-0 text-muted mb-2 p-0" href="#"
+                    >Locksafe</a
+                  >
+                </li>
+                <li>
+                  <a class="nav-link p-0 text-muted mb-2 p-0" href="#"
+                    >ServiceBox</a
+                  >
+                </li>
+                <li>
+                  <a class="nav-link p-0 text-muted mb-2 p-0" href="#"
+                    >Smartterminal</a
+                  >
+                </li>
+                <li>
+                  <a class="nav-link p-0 text-muted mb-2 p-0" href="#"
+                    >Velosafe</a
+                  >
+                </li>
+                <li>
+                  <a class="nav-link p-0 text-muted mb-2 p-0" href="#"
+                    >ServiceBox Basic</a
+                  >
+                </li>
+                <li>
+                  <a class="nav-link p-0 text-muted mb-2 p-0" href="#"
+                    >Locksafe Mechanic</a
+                  >
+                </li>
+                <li>
+                  <a class="nav-link p-0 text-muted mb-2 p-0" href="#"
+                    >Servicepoint</a
+                  >
+                </li>
+                <li class="nav-item mb-2">
+                  <a href="#" class="nav-link p-0 text-muted">Palettenbox</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="col-6 col-md-2 mb-3">
+              <h5>Hilfe</h5>
+              <ul class="nav flex-column">
+                <li>
+                  <a href="#" class="nav-link p-0 text-muted mb-2 p-0">AGB</a>
+                </li>
+                <li>
+                  <a href="#" class="nav-link p-0 text-muted mb-2 p-0"
+                    >Datenschutz</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="nav-link p-0 text-muted mb-2 p-0"
+                    >Downloads</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="nav-link p-0 text-muted mb-2 p-0"
+                    >Karriere</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="nav-link p-0 text-muted mb-2 p-0"
+                    >Impressum</a
+                  >
+                </li>
+                <li>
+                  <a href="./faq.html" class="nav-link p-0 text-muted mb-2 p-0"
+                    >FAQs</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="nav-link p-0 text-muted mb-2 p-0"
+                    >Cookies</a
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <div class="col-md-5 offset-md-1 mb-3">
+              <form>
+                <h5>Subscribe to our newsletter</h5>
+                <p>Monthly digest of what's new and exciting from us.</p>
+                <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                  <label for="newsletter1" class="visually-hidden"
+                    >Email address</label
+                  >
+                  <input
+                    id="newsletter1"
+                    type="text"
+                    class="form-control"
+                    placeholder="Email address"
+                  />
+                  <button class="btn btn-danger" type="button">
+                    Subscribe
+                  </button>
+                </div>
+              </form>
+              <div class="mt-5">
+                <a href="#">
+                  <img
+                    class="lazyload"
+                    style="height: 40px"
+                    data-src="./img/sitec-logo.svg"
+                    alt=""
+                  />
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top"
+          >
+            <p>© 2022 Locktec, Inc. All rights reserved.</p>
+            <ul class="list-unstyled d-flex">
+              <li class="ms-3">
+                <a class="link-dark" href="#"
+                  ><i class="bi bi-instagram fa-2x"></i
+                ></a>
+              </li>
+              <li class="ms-3">
+                <a class="link-dark" href="#"
+                  ><i class="bi bi-youtube fa-2x"></i
+                ></a>
+              </li>
+              <li class="ms-3">
+                <a class="link-dark" href="#"
+                  ><i class="bi bi-facebook fa-2x"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </footer>
+      </div>
+    </section>
+
+    <!-- End footer -->
+    <!--Start of Tawk.to Script-->
+    <script type="text/javascript">
+      var Tawk_API = Tawk_API || {},
+        Tawk_LoadStart = new Date();
+      (function () {
+        var s1 = document.createElement('script'),
+          s0 = document.getElementsByTagName('script')[0];
+        s1.async = true;
+        s1.src = 'https://embed.tawk.to/62a82edbb0d10b6f3e773793/1g5gl8amh';
+        s1.charset = 'UTF-8';
+        s1.setAttribute('crossorigin', '*');
+        s0.parentNode.insertBefore(s1, s0);
+      })();
+           
+  const heading=document.querySelector('.heading')
+  const hero=document.querySelector('#hero')
+ 
+      setTimeout(() => {
+        hero.classList.add('end')
+        heading.style.display = "block";
+   
+
+ }, 7000);
+    </script>
+
+    <script src="jquery.js"></script>
+    <script src="owl.carousel.min.js"></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/ca11177b7a.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./lightbox.min.js"></script>
+    <script src="servicebox-3.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
